@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Ejercicio5</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre-entry" name="nombre" />
+    </div>
+    <div>
+      <label for="codigo">Código</label>
+      <input type="text" id="codigo-entry" name="codigo" type="text" />
+    </div>
+    <div>
+      <label for="precio">Precio</label>
+      <input type="entry" id="precio-entry" type="number" min="0" />
+    </div>
+    <div>
+      <label for="stock">Stock</label>
+      <input type="entry" id="stock-entry" type="number" min="0" />
+    </div>
+    <button onclick="addObject()">Añadir Objeto</button>
+    <button onclick="check_inventory()">Revisar Stock</button>
+
+    <script src="../javascript/ejercicio6.js"></script>
+  </body>
+</html>
