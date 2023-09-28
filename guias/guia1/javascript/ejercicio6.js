@@ -35,7 +35,7 @@ function addObject() {
     stock: Number(stock_entry),
   };
 
-  found = false;
+  let found = false;
   for (i = 0; i < object_list.length; i++) {
     if (object_list[i].codigo === objeto.codigo) {
       object_list[i].stock += objeto.stock;
