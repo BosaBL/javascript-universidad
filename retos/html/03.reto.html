@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Reto 03</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Super Calculadora de Propinas</h1>
+    <form id="propina-form">
+      <div>
+        <label>Total de la boleta: </label>
+        <!-- type = "number" checkea que solo se ingresen números, y min="0" checkea que el numero sea mayor a 0.-->
+        <input type="number" step="any" name="precio-input" min="0" required />
+        <label>Porcentaje de propina</label>
+        <select name="propina-select" id="propina-select" required>
+          <option value="10">10%</option>
+          <option value="15">15%</option>
+          <option value="20">20%</option>
+        </select>
+        <button type="submit">Calcular</button>
+      </div>
+      <div>
+        <label
+          >Propina:
+          <label name="propina-output" id="propina-output"></label>
+        </label>
+      </div>
+      <div>
+        <label
+          >Total a pagar:
+          <label name="total-output" id="total-output"></label>
+        </label>
+      </div>
+    </form>
+    <script src="../javascript/03.reto.js"></script>
+  </body>
+</html>
