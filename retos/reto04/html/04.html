@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Reto 04</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      div {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Calculadora de IMC</h1>
+    <form id="imc-form">
+      <div>
+        <label>Nombre: </label>
+        <input type="text" name="name-input" value="" required />
+      </div>
+      <div>
+        <label>Peso (Kg): </label>
+        <input
+          type="number"
+          name="name-input"
+          value=""
+          min="0"
+          step="any"
+          required
+        />
+      </div>
+      <div>
+        <label>Altura (cm): </label>
+        <input
+          type="number"
+          name="name-input"
+          value=""
+          min="0"
+          step="any"
+          required
+        />
+      </div>
+      <div>
+        <label>Edad: </label>
+        <input
+          type="number"
+          name="name-input"
+          value=""
+          min="0"
+          step="1"
+          required
+        />
+      </div>
+      <div>
+        <label>Género: </label>
+        <select>
+          <option value="">Masculino</option>
+          <option value="">Femenino</option>
+        </select>
+      </div>
+      <div>
+        <label>Actividad Física: </label>
+        <select>
+          <option value="1.2">Sedentario</option>
+          <option value="1.55">Moderado</option>
+          <option value="1.9">Activo</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit">Calcular</button>
+      </div>
+    </form>
+    <script src="../javascript/04.js"></script>
+  </body>
+</html>
