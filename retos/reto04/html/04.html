@@ -22,7 +22,7 @@
         <label>Peso (Kg): </label>
         <input
           type="number"
-          name="name-input"
+          name="peso-input"
           value=""
           min="0"
           step="any"
@@ -33,7 +33,7 @@
         <label>Altura (cm): </label>
         <input
           type="number"
-          name="name-input"
+          name="altura-input"
           value=""
           min="0"
           step="any"
@@ -44,7 +44,7 @@
         <label>Edad: </label>
         <input
           type="number"
-          name="name-input"
+          name="peso-input"
           value=""
           min="0"
           step="1"
@@ -53,14 +53,14 @@
       </div>
       <div>
         <label>Género: </label>
-        <select>
-          <option value="">Masculino</option>
-          <option value="">Femenino</option>
+        <select name="select-genero" required>
+          <option value="M">Masculino</option>
+          <option value="F">Femenino</option>
         </select>
       </div>
       <div>
         <label>Actividad Física: </label>
-        <select>
+        <select name="select-act-fisica" required>
           <option value="1.2">Sedentario</option>
           <option value="1.55">Moderado</option>
           <option value="1.9">Activo</option>
@@ -70,6 +70,7 @@
         <button type="submit">Calcular</button>
       </div>
     </form>
+    <div id="result-div"></div>
     <script src="../javascript/04.js"></script>
   </body>
 </html>
