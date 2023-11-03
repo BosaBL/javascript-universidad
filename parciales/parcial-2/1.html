@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial-1</title>
+    <script src="./1.js"></script>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div id="content">
+    <form id="pass-gen-form">
+        <div class = "input-container">
+            <label>Largo de Contraseña</label>
+            <input type="number" name="pass-length" id="pass-length" min ="8" max="20" step = "1" required>
+        </div>
+        <div class = "input-container">
+            <label>Incluir Letras Mayúsuclas </label>
+            <input type="checkbox" name="include-upp" id="include-upp">
+        </div>
+        <div class = "input-container">
+            <label>Incluir Letras Minúsculas </label>
+            <input type="checkbox" name="include-low" id="include-upp">
+        </div>
+        <div class="input-container">
+            <label>Incluir Números</label>
+        <input type="checkbox" name="include-num" id="include-upp">
+        </div>
+        <div class="input-container">
+            <label>Incluir Carácteres Especiales </label>
+            <input type="checkbox" name="include-spec" id="include-upp">
+        </div>
+        <div><button type="submit">Generar Contraseña</button></div>
+    </form>
+    <div id="outputdiv"></div>
+</div>
+</body>
+</html>
